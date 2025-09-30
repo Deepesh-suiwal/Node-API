@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: Node-Auth/CRUD/Backend
+        working-directory: Node-API/CRUD/Backend
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.10
