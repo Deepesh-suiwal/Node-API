@@ -6,7 +6,7 @@ import "dotenv/config";
 const app = express();
 connectDb();
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 443;
 app.use(express.json());
 
 app.get("/api/user", async (req, res) => {
@@ -25,8 +25,8 @@ app.get("/api/user", async (req, res) => {
   }
 });
 
-app.get("/api/Deepesh", async (req, res) => {
-  res.json({ message: "pipeline is working My name is Deepesh" });
+app.get("/", async (req, res) => {
+  res.json({ message: "pipeline is working" });
 });
 
 app.post("/api/users", async (req, res) => {
