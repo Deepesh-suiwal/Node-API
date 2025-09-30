@@ -25,6 +25,10 @@ app.get("/api/user", async (req, res) => {
   }
 });
 
+app.get("/api/Deepesh", async (req, res) => {
+  res.json({ message: "pipeline is working" });
+});
+
 app.post("/api/users", async (req, res) => {
   console.log("Deepesh");
   try {
