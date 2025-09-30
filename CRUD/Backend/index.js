@@ -6,7 +6,7 @@ import "dotenv/config";
 const app = express();
 connectDb();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 80;
 app.use(express.json());
 
 app.get("/api/user", async (req, res) => {
