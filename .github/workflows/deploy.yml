@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd ~/CRUD/Backend
+            cd ~Node-API/CRUD/Backend
             git fetch origin
             # git reset --hard origin/main
             npm install 
