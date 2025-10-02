@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        # working-directory: ./CRUD/Backend
+        working-directory: ./CRUD/Backend
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.10
@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd ~/CRUD/Backend
+            cd ~Node-API/CRUD/Backend
             git pull origin main
             npm install 
             pm2 restart myapp || pm2 start index.js --name myapp
