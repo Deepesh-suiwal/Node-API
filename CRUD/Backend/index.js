@@ -26,7 +26,7 @@ app.get("/api/user", async (req, res) => {
 });
 
 app.get("/", async (req, res) => {
-  res.send("pipeline is working now. but the issue is server is not pulling latest code.! and i am trying this many times someone please help me");
+  res.send("pipeline is working now. but the issue is server is not pulling latest code.! and i am trying this many times now i am changing folder path in script");
 });
 
 app.post("/api/users", async (req, res) => {
