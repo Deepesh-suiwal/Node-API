@@ -29,7 +29,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             cd ~/CRUD/Backend
-            git pull origin main
+            git fetch origin
             # git reset --hard origin/main
             npm install 
             sudo pm2 reload myapp || pm2 start index.js --name myapp
